@@ -3,7 +3,7 @@ class Validator { //static class making vars and methods accessible without inst
     static MIN_LENGTH = 'MIN_LENGTH'; // flag for password min length 
 
     static validate(value, flag, validatorValue){
-        if (flag === this.REQUIRED){ //returns truee if entered value is not empty
+        if (flag === this.REQUIRED){ //returns true if entered value is not empty
             return value.trim().length > 0;//flag for username being entered
         }
         if (flag === this.MIN_LENGTH) {
