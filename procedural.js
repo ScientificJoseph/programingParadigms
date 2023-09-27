@@ -17,13 +17,13 @@ function signupHandler(event) {
     const enteredPassword = passwordInput.value;
 
     //check for valid input in usernam text-box
-    if (enteredUsername.trim().length === 0) {
+    if (enteredUsername.trim().length === 0) { // trim accounts for white space
         alert('Invalid input - user name cannot be blank');
         return;
     }
 
     //check for valid input into password text-box
-    if (enteredPassword.trim().length <= 5) {
+    if (enteredPassword.trim().length <= 5) { // trim accounts for white space
         alert('Invalid input - [password must be 6 characters or longer]');
         return;
     }
