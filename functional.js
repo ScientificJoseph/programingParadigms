@@ -1,5 +1,5 @@
-const REQUIRED = 'REQUIRED';
-const MIN_LENGTH = 'MIN_LENGTH';
+const REQUIRED = 'REQUIRED'; //flag for username validation
+const MIN_LENGTH = 'MIN_LENGTH';//flag for password validation
 
 function validate(value, flag, validatorValue) {//receives userinputs conditional call in createUser
     if (flag === REQUIRED){ //flag for username being entered
